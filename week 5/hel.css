@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Unbounded:wght@200;400;700&display=swap");
+body {
+  font-family: "Geneva", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.contain {
+  display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left-col {
+  width: 50%;
+  background-color:grey;
+  padding: 5%;
+  color: goldenrod;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  font-family: "Unbounded", cursive;
+}
+
+h2 {
+  margin-bottom: 100px;
+  font-weight: 200;
+}
+
+#first-image{
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
+    background-size: cover; 
+    background-position: center;
+}
+
+
+
+.button {
+  margin-top: 20px;
+}
+
+.button a {
+  display: inline-block;
+  padding: 10px 50px;
+  background: orange;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 800;
+  transition: all 0.5s ease;
+}
+
+.button a:hover {
+  background: black;
+  color: orange;
+}
+/* SECOND-PAGE */
+
+.intro{
+    background-color:paleturquoise;
+}
+
+.cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+}
+
+.title-text{
+    padding: 45px; 
+    font-family: fantasy;
+    text-align: left;
+    font-size: 32px;
+    width: 50%;
+}
+
+.title-text{
+    font-family: "Unbounded", cursive
+}
+
+#second-image{
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    object-position: center;
+    width: 100%;  
+    height: auto;
+    object-fit: cover;
+}
+
+
+.secondpage .para1{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    Margin-top:800px;
+    text-align: left;
+    width: 50%;
+}
+
+.para1{
+    font-size: 28px;
+}
+
+/* Thirdpage */
+.thirdintro{
+    background-color: rgb(12,59,46);
+}
+
+.title3 h1{
+    padding: 45px; 
+    font-family: fantasy;
+    text-align: left;
+    font-size: 32px;
+    width: 100%;
+    color: aliceblue;
+}
+
+.title3 h1{
+    font-family: "Unbounded", cursive
+}
+
+.vessel{
+    display: flex;
+}
+
+.images{
+    padding:20px;
+    margin: 10px;
+    flex: 1;
+}
+
+#first, #second, #third{
+    font-size: 25px;
+    font-family: "Unbounded", cursive
+}
