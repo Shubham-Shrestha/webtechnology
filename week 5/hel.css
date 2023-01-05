@@ -11,8 +11,7 @@ body {
 
 .contain {
   display: flex;
-  flex-direction: row;
-    flex-wrap: wrap;
+  height: 700px;
 }
 
 .left-col {
@@ -33,16 +32,6 @@ h2 {
   margin-bottom: 100px;
   font-weight: 200;
 }
-
-#first-image{
-    display: inline-block;
-    width: 50%;
-    overflow: hidden;
-    background-size: cover; 
-    background-position: center;
-}
-
-
 
 .button {
   margin-top: 20px;
@@ -68,7 +57,7 @@ h2 {
 /* SECOND-PAGE */
 
 .intro{
-    background-color:paleturquoise;
+    background-color:rgb(110,97,100);
 }
 
 .cont{
@@ -115,10 +104,13 @@ h2 {
 .para1{
     font-size: 28px;
 }
-
+.contact{
+  font-size: large;
+  font-style: bold;
+}
 /* Thirdpage */
 .thirdintro{
-    background-color: rgb(12,59,46);
+    background-color:yellowgreen;
 }
 
 .title3 h1{
@@ -143,8 +135,141 @@ h2 {
     margin: 10px;
     flex: 1;
 }
+.abdul{
+  margin-left:50px;;
+  padding-left: 70px;
+  padding-bottom:30px ;
+}
 
 #first, #second, #third{
     font-size: 25px;
     font-family: "Unbounded", cursive
+}
+.Third_main{
+  padding: 10px;
+  height: 790px;
+  width: 100%;
+  color: yellow;
+}
+
+#h11{
+  text-align: center;
+}
+.Card_box{
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+}
+
+.card{
+  height: 400px;
+  width: 400px;
+
+}
+.card:hover{
+  transform: scale(1.05);
+  transition-duration: 1s;
+}
+
+#card_img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.card_detail{
+  text-align: center;
+
+}
+#card_parag{
+  font-size: 22px;
+}
+body{
+  background-image: url('background.png');
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+}
+.mainia{
+  height: 790px;
+  width: 100%;
+  background-color:rgb(78, 228, 150);
+  display: flex;
+  color: rgb(7, 15, 164);
+}
+h1{
+  padding: 10px;
+  text-align: center;
+  
+}
+#imgfourth{
+  height: 790px;
+  width: 55%;
+  object-fit: cover;
+}
+.list{
+  width: 40%;
+}
+ul {
+  margin-top: 250px;
+  margin-left: 50px;
+
+}
+li{
+  list-style-type: none;
+  font-size: 27px;
+  padding: 10px;
+}
+.ULLU{
+  color: rgb(99, 5, 158);
+  width: 100%;
+  height: 795px;
+  background-color: rgb(42, 45, 42);
+  display: flex;
+}
+
+.Container{
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-top: 30px;
+  width: 55%;
+  height: 650px;
+  padding: 10px 10px;
+}
+
+h1{
+  margin-top: 80px;
+  font-size: 58px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+#first_para1{
+  padding: 10px 10px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-size: 28px;
+}
+#img0{
+  width: 800px;
+  height: 795px;
+  object-fit: cover;
+}
+
+input[type="button"]{
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background-color: rgb(240, 8, 47);
+  color: #333;
+  font-weight: bolder;
+  text-align: center;
+}
+
+input[type="button"]:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transition-duration: 1s;
+  background-color: darkorange;
 }
