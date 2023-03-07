@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 115vh;
+        }
+
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+		textarea{
+             width: 500px;
+		}
+
+       .des,  .rec, .cb , .suggest{
+		padding-bottom:20px;
+	   }
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            padding: 10px;
+			width:500px ;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<center><h3 style="color:rgb(9, 250, 9)">HERALD COLLEGE KATHMANDU SURVEY FORM</h3></center>
+    <div class="container">
+        <form action="action_page.php">
+            <div>
+                <label for="fname">Name</label><br>
+                <input type="text" id="fname" name="firstname" placeholder="Enter your name">
+            </div>
+			<br>
+            <div>
+                <label for="Uemail">Email</label><br>
+                <input type="text" id="Uemail" name="email" placeholder="Your email">
+            </div>
+			<br>
+            <div>
+                <label>Age</label><br>
+                <input type="number" name="age" placeholder="Your age">
+            </div>
+			<br>
+            <div class="des">
+                <label for="best">WHAT DESCRIBES YOU BEST</label><br>
+                <select id="best" name="best">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="employee">Employee</option>
+                </select>
+            </div>
+            <div class="rec">
+                <label>
+                    Would you like to recommend herald college kathmandu to a friend
+                    <br>
+                    <input type="radio" name="recommend" value="yes"> Yes<br>
+                    <input type="radio" name="recommend" value="no"> No<br>
+                    <input type="radio" name="recommend" value="maybe"> Maybe<br>
+                </label>
+            </div>
+
+			<div class="cb">
+                <label>
+                    Language and frameworks known(Check all that apply)
+                    <br>
+                    <input type="checkbox" name="recommend" value="yes"> C<br>
+                    <input type="checkbox" name="recommend" value="no"> C++<br>
+                    <input type="checkbox" name="recommend" value="maybe"> C#<br>
+					<input type="checkbox" name="recommend" value="yes"> Python<br>
+                    <input type="checkbox" name="recommend" value="no">Java<br>
+                    <input type="checkbox" name="recommend" value="maybe">Javascript <br>
+					<input type="checkbox" name="recommend" value="yes">Angular<br>
+                    <input type="checkbox" name="recommend" value="no">Django<br>
+                    <input type="checkbox" name="recommend" value="maybe"> React<br>
+
+                </label>
+		
+            </div>
+            <div class="suggest">
+                <label for="suggestions">Any comment or suggestions</label>
+                <br>
+                <textarea id="suggestions" name="suggestions" placeholder="Write something.." style="height:50px"></textarea>
+            </div>
+            <div >
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

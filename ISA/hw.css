@@ -1,0 +1,282 @@
+
+.main{
+    background-image:url(home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display:flex;
+    border: 1px solid black;
+    margin-right:1195px;
+}
+
+nav ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+nav ul li{
+    padding:32px;
+}
+nav ul li img{
+    border-radius:50px;
+}
+nav ul li a{
+    color:black;
+    font-size:small;
+    text-decoration:overline;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:gray;
+    transition: .4s;
+} 
+
+.search{
+    padding-left:1150px;
+}
+.search button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+ .search button:hover {
+    background: #ccc;
+  }
+  .service{
+    background:rgb(223, 223, 74);
+    width:100%;
+    padding: 60px 0px;
+  }
+ 
+  .title h2{
+    color: white;
+    font-size:75px;
+    width:1130 px;
+    margin: 30px auto;
+    text-align: center;
+  }
+ 
+  .box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+ 
+  .card{
+    height:365px;
+    width: 355px;
+    padding: 20px 35px;
+    background:rgb(189, 189, 36);
+    border-radius: 20px;
+    margin:15px;
+    position: relative;
+    overflow:hidden;
+    text-align: center;
+  }
+  
+  .card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin:25px 0px;
+    color: #f9004d;
+  }
+ 
+  h5{
+    color:white;
+    font-size:23px;
+    margin-bottom:15px;
+  }
+ 
+  .pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom:25px
+  }
+ 
+  .card .button{
+    background-color:#f9004d;
+    color:aliceblue;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+ }
+  
+ .card .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor:pointer;
+ }
+
+ .cl{
+    background:rgb(136, 136, 62);
+    display:flex;
+    padding:25px;
+  }
+
+ .carde {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+  }
+  
+  .carde button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .carde button:hover {
+    opacity: 0.7;
+  }
+ 
+  .aboute{
+    background-image:url(store.jpg);
+     display:flex;
+     justify-content:space-between;
+     padding:70px;
+  }
+ 
+  .aboute img{
+     height:500px;
+     width: 400px;
+  }
+  .me{
+    padding-right:30px;
+    padding-left: 0;
+  }
+ .knowme{
+    padding-left:5px;
+ }
+ .knowme p{
+    padding-left:10px;
+    background-color:coral;
+    color:brown;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom:25px
+ }
+ 
+ .knowme h2{
+    padding-left:10px;
+    background-color:whitesmoke;
+ }
+
+.maincontainer{
+background-color: rgb(235, 235, 110);
+display:flex;
+padding: 80px;;
+ }
+
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #535050;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-size: 1.1em;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+.container input[type="text"],
+input[type="email"],
+textarea {
+	padding: 10px;
+	margin-bottom: 15px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+	font-size: 1em;
+	color: #333;
+}
+
+.container input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+	background-color: #555;
+}
+
+
+  footer{
+    position:relative;
+    width:100%;
+    height:100px;
+    background:rgb(44, 44, 43) ;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center; 
+ }
+ .social-container{
+    padding-bottom:50px;
+   color:mediumvioletred;
+ }
+ .social-container a {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .social-container a i {
+   width: 30px;
+   height: 30px;
+   transition: all 0.2s ease-in-out;
+ }
+ 
+ .social-container a:hover i {
+   transform: scale(1.1);
+ }
+
+ .final{
+    position: absolute;
+    color: antiquewhite;
+    bottom:10px;
+    font-size:14px;
+ }
