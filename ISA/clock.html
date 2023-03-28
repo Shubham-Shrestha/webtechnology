@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital Clock</title>
+    <style>
+      /* Style the clock element */
+      #clock {
+        font-family: Arial, sans-serif;
+        font-size: 3em;
+        text-align: center;
+        margin-top: 50px;
+        line-height: 1.2em;
+      }
+      
+      /* Style the date element */
+      #date {
+        font-family: Arial, sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="clock">
+      <span id="time"></span>
+      <br>
+      <span id="ampm"></span>
+    </div>
+    <div id="date"></div>
+    <script>
+      // Define the function to update the clock
+      function updateClock() {
+        // Get the current time and date
+        var currentTime = new Date();
+
+        // Extract the hours, minutes, and seconds
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+
+        // Convert hours to 12-hour format and determine AM/PM
+        var ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        
+        // Add leading zeros to minutes and seconds if necessary
+        if (minutes < 10) {
+          minutes = "0" + minutes;
+        }
+        if (seconds < 10) {
+          seconds = "0" + seconds;
+        }
+
+        // Construct the strings for the time and AM/PM
+        var timeString = hours + ":" + minutes + ":" + seconds;
+        var ampmString = ampm;
+
+        // Update the clock elements with the new time and AM/PM
+        document.getElementById("time").innerHTML = timeString;
+        document.getElementById("ampm").innerHTML = ampmString;
+
+        // Extract the day, month, and year
+        var day = currentTime.getDate();
+        var month = currentTime.getMonth() + 1; // Note: January is 0
+        var year = currentTime.getFullYear();
+
+        // Construct the string for the date
+        var dateString = day + "/" + month + "/" + year;
+
+        // Update the date element with the new date
+        document.getElementById("date").innerHTML = dateString;
+      }
+
+      // Call the updateClock function every second
+      setInterval(updateClock, 1000);
+    </script>
+  </body>
+</html>
